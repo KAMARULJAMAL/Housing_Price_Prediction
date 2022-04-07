@@ -1,0 +1,84 @@
+{% extends 'user/signip_index.html' %}
+{% block body %}
+<form action="/signup_post" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table class="table table-borderless">
+    <tr>
+      <th>Name</th>
+      <td><label>
+        <input type="text" name="textfield" class="form-control" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td>
+        <input name="radiobutton" type="radio" value="Male" />
+        Male
+
+        <input name="radiobutton" type="radio" value="Female" />
+      Female
+
+        <input name="radiobutton" type="radio" value="Other" />
+      Other
+    </tr>
+
+    <tr>
+      <th>Place</th>
+      <td><label>
+        <input type="text" name="textfield3" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Pin</th>
+      <td><label>
+        <input type="text" name="textfield4" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Post</th>
+      <td><label>
+        <input type="text" name="textfield5" class="form-control" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th>District</th>
+      <td><label>
+        <input type="text" name="textfield6" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Phone</th>
+      <td><label>
+        <input type="text" name="textfield8" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Image</th>
+      <td><label>
+        <input type="file" name="file" class="form-control" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>E-mail</th>
+      <td><label>
+        <input type="text" name="textfield9" class="form-control" required/>
+      </label></td>
+    </tr>
+      <tr>
+          <th>Password</th>
+          <td><input type="text" name="p1" class="form-control" required></td>
+      </tr>
+      <tr>
+          <th>Confirm Password</th>
+          <td><input type="text" name="p2" class="form-control" required></td>
+      </tr>
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Signup" class="btn btn-outline-primary"/>
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+
+{% endblock %}
